@@ -1,0 +1,36 @@
+<html>
+    <!--Сайт адаптирован под мобильные устройства, но некоторые элементы "жмыхаются". Советую смотреть с планшета или с ПК.-->
+    <head>
+        <title>Скачать - Iron-Lang</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <body>
+        <div class="topnav">
+            <ul>
+                <li><img src="../img/ironlanglogo1.png" width="41px"></li>
+                <li><a id="nonactive" href="../index.html">Главная</a></li>
+                <li><a id="nonactive" href="compilation.html">Компиляция</a></li>
+                <li><a id="nonactive" href="about_iron.html">Что такое Iron?</a></li>
+                <li><a id="active">Скачать</a></li>
+                <li style="float: right;"><a id="nonactive" href="https://github.com/Dis-Studio/Iron-Lang">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <h1>Скачать Iron</h1>
+            <h2>Чтобы скачать Iron, нажмите на кнопку "Скачать".</h2>
+            <p class="button"><a href="https://github.com/Dis-Studio/Iron-Lang.git" >Скачать</a></p>
+            <h1>Как установить язык на свой компьютер?</h1>
+            <hr/>
+            <h2>Пропишите в терминал команды для скачивания и установки:</h2>
+            <div class="code">
+                git clone https://github.com/Dis-Studio/Iron-Lang<br/>
+                cd Iron-Lang<br/>
+                make libs <span class="pri">(ЕСЛИ ОТСУТСТВУЮТ ПАКЕТЫ: nasm, gcc, binutils, nodejs)</span><br/>
+                make install <span class="pri">(ЖДИТЕ ПОКА КОМПИЛЯТОР СКОМПИЛИРУЕТСЯ И УСТАНОВИТСЯ)</span><br/>
+            </div>
+            <h2>Пока-что доступно только на Linux.</h2>
+        </div>
+    </body>
+</html>
