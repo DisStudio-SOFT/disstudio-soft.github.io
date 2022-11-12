@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-bottom: 2px solid #206eff;
+    box-shadow: 0px -5px 6px -5px rgba(32, 110, 255, 1) inset, 0px 1px 6px 0px rgba(32, 110, 255, 1);
+}
+  
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar li a:hover:not(.active, .logo) {
+    background-color: #111;
+    box-shadow: 0px -10px 6px -10px rgba(32, 110, 255, 1) inset;
+}
+
+.active {
+    background-color: #222;
+    box-shadow: 0px -10px 6px -10px rgba(32, 110, 255, 1) inset;
+    cursor: default;
+}
+
+.logo {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px -10px 6px -10px rgba(32, 110, 255, 1) inset;
+    cursor: default;
+}
+
+.text {
+    text-align: center;
+    margin-top: 17px;
+}
+
+.text h1 {
+    font-weight: 300;
+}
+
+.text h2 {
+    font-weight: 200;
+}
+
+.text hr {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-color: #1a5ad3;
+}
+
+.img {
+    margin-top: 15px;
+    transition: 250ms;
+}
+
+.img img {
+    cursor: pointer;
+}
+
+.soush {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.imgf {
+    transition: 250ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.imgf img {
+    width: 900px;
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.textc {
+    margin-right: 12px;
+    text-align: left;
+}
+
+.textc a {
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+}
+
+.textc a:hover {
+    color: white;
+}
+
+.textc a:active {
+    color: rgb(138, 138, 138);
+}
+
+.avatar {
+    margin-left: 12px;
+}
+
+.avatar img {
+    border-radius: 8px;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.up h3 {
+    font-weight: 200;
+}
+
+.up h3 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.up h3 a:hover {
+    color: rgb(163, 163, 163);
+}

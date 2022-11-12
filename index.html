@@ -1,25 +1,107 @@
 <html>
-    <!--Сайт адаптирован под мобильные устройства, но некоторые элементы "жмыхаются". Советую смотреть с планшета или с ПК.-->
     <head>
-        <title>Iron-Lang</title>
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="shortcut icon" href="img/favicon.ico"/>
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Dis-Studio Team</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
     </head>
     <body>
-        <div class="topnav">
+        <a name="navbar"></a>
+        <div class="navbar">
             <ul>
-                <li><img src="img/ironlanglogo1.png" width="41px"></li>
-                <li><a id="active">Главная</a></li>
-                <li><a id="nonactive" href="pages/compilation.html">Компиляция</a></li>
-                <li><a id="nonactive" href="pages/about_iron.html">Что такое Iron?</a></li>
-                <li><a id="nonactive" href="pages/download.html">Скачать</a></li>
-                <li style="float: right;"><a id="nonactive" href="https://github.com/Dis-Studio/Iron-Lang">GitHub</a></li>
+                <li><a class="logo">Dis-Studio Team</a></li>
+                <li><a class="active">Главная</a></li>
+                <li><a href="#members">Участники команды</a></li>
+                <li><a href="#links">Ссылки</a></li>
+                <li><a href="https://github.com/DisStudio-SOFT">GitHub</a></li>
             </ul>
         </div>
         <div class="text">
-            <h1>Iron</h1>
-            <h2>Это бета-версия страницы, как и бета-версия языка программирования Iron-Lang.<br/>Проект временно остановлен.</h2>
+            <h1>Dis-Studio, это</h1>
+            <h2>компания, состоящая из двух человек.</h2>
+            <hr/>
+            <h1>Что мы делаем?</h1>
+            <h2>Обычно мы пинаем хуи и забрасываем проекты чаще, чем обнова стима.</h2>
+            <h2>А точнее мы делаем языки программирования, приложения, и многое другое для компьютеров.</h2>
+            <hr/>
+            <h1>На данный момент мы делаем наш собственный шелл, <span class="soush">SouSH</span></h1>
+            <div class="img" id="img">
+                <img src="img/image.png" alt="Произошла ошибка в загрузке картинки нашего шелла Soush :(" width="500px" onclick="full()">
+            </div>
+            <hr/>
+            <h1>Участники команды Dis-Studio:</h1>
+            <a name="members"></a>
+            <div class="card">
+                <div class="textc">
+                    <h1>Honak</h1>
+                    <p>Разработчик SouSH</p>
+                    <p>back-end программист</p>
+                    <p>(C, C++)</p>
+                </div>
+                <div class="avatar">
+                    <img src="img/honak.png" width="200px">
+                </div>    
+            </div>
+            <div class="card">
+                <div class="textc">
+                    <h1>Cat.</h1>
+                    <p>Разработчик этого сайта.</p>
+                    <p>front-end программист</p>
+                </div>
+                <div class="avatar">
+                    <img src="img/cat.jpg" width="200px">
+                </div>    
+            </div>
+            <hr/>
+            <h1>Ссылки на:</h1>
+            <a name="links"></a>
+            <div class="card">
+                <div class="textc">
+                    <h1>GitHub</h1>
+                    <a href="https://github.com/DisStudio-SOFT">DisStudio-SOFT</a>
+                </div>
+                <div class="avatar">
+                    <img src="img/github.png" width="200px">
+                </div>
+            </div>
+            <div class="card">
+                <div class="textc">
+                    <h1>Discord Server</h1>
+                    <a href="https://discord.gg/csvykB5d9A">Dis-Studio</a>
+                </div>
+                <div class="avatar">
+                    <img src="img/discord.jpg" width="200px">
+                </div>
+            </div>
+            <hr/>
+        </div>
+        <div class="up">
+            <h3><a href="#navbar" id="up">Наверх?</a></h3>
         </div>
     </body>
+    <script>
+        var notfull = false;
+        var img = document.getElementById("img").classList;
+        var body = document.querySelector("body");
+        var up = document.getElementById("up");
+
+        function full() {
+            if (!notfull){
+                img.remove("img");
+                img.add("imgf");
+                notfull = true;
+                body.style.overflow = "hidden";
+                up.click();
+                return;
+            } else if (notfull){
+                img.remove("imgf");
+                img.add("img");
+                notfull = false;
+                body.style.overflow = "";
+                up.click();
+                return;
+            }
+        }
+
+    </script>
 </html>
