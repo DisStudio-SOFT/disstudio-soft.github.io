@@ -155,3 +155,25 @@ body {
 .up h3 a:hover {
     color: rgb(163, 163, 163);
 }
+
+@media screen and (max-width: 600px){
+    .img img {
+        width: 300px;
+    }
+
+    .imgf img {
+        width: 350px;
+    }
+
+    .active {
+        box-shadow: none;
+    }
+    
+    .logo {
+        box-shadow: none;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+}
